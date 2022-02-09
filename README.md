@@ -1,6 +1,6 @@
 # joy-zhouu.github.io
 
-Redesign of www.joyzhou.com with HTML, CSS, and Javascript. Hosted on Github.
+Redesign of www.joyzhou.com. Built with HTML, CSS, and Javascript, hosted on GitHub Pages.
 
 New:
 ![image](https://user-images.githubusercontent.com/11446741/152699349-75cb51fb-76db-4fa9-b8b4-90aba359fb20.png)
