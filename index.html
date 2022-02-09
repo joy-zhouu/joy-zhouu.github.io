@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,6000&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Joy Zhou</title>
   <link rel="shortcut icon" type="image/jpg" href="/assets/personal_logo.png">
@@ -45,12 +44,11 @@
           as a research assistant. 🗺️
         </p>
         <p>
-            <a href="https://www.linkedin.com/in/joyjyzhou@"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com/joyjzhou"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/joy-zhouu"><i class="fab fa-github"></i></a>
-            <a href="mailto:joy.zhou@mcgill.ca"><i class="fas fa-envelope"></i></a>
+            <span style="padding-right: 15px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="https://www.linkedin.com/in/joyjyzhou"><i class="fab fa-linkedin-in"></i></a></span>
+            <span style="padding-right: 15px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="https://twitter.com/joyjzhou"><i class="fab fa-twitter"></i></a></span>
+            <span style="padding-right: 16px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="https://github.com/joy-zhouu"><i class="fab fa-github"></i></a></span>
+            <span style="padding-right: 15px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="mailto:joy.zhou@mcgill.ca"><i class="fas fa-envelope"></i></a></span>
         </p>
-        <!-- <p><span class="smallerText">Psst! My portfolio is a WIP so viewing on desktop is the best for now!</span></p> -->
         <div class="arrow bounce">
           <a class="fa fa-arrow-down fa-2x"></a>
         </div>
@@ -61,16 +59,72 @@
   <main>
     <h1><i>Featured Projects</i> 💾</h1>
     <div id="cover">
-      <a href="https://github.com/joy-zhouu/bixi-2021"><img src="assets/bixi.png"  style="margin: 0px 10px 10px 0px"></a>
-      <a href="#"><img src="assets/mockup.png" style="margin: 0px 10px 10px 0px"></a>
-      <a href="https://github.com/mingyeeee/RUhacks2021"><img src="assets/augmented.png"  style="margin: 0px 10px 10px 0px"></a>
-      <a href="https://devpost.com/software/loca-0bgsit"><img src="assets/loca.png" style="margin: 0px 10px 10px 0px"></a>
+      <div class="container">
+        <img src="assets/bixi.png">
+        <div class="overlay">
+          <div class="text">
+            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">BIXI Data Analysis</span><br>
+            Visualization of the most popular BIXI stations during the 2021 season</p>
+            <tt style="color: #1BA098">python | bixi open data | mapbox</tt>
+            <div class="icon">
+              <span style="font-size: 30px; padding-left: 100px"><a href="https://github.com/joy-zhouu/bixi-2021"><i class="fab fa-github"></i></a></span>
+            </div>
+          </div>  
+      </div>
+      </div>
+
+      <div class="container">
+        <img src="assets/mockup.png">
+        <div class="overlay">
+          <div class="text">
+            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">Personal Website v2</span><br>
+              Second iteration of my personal website. Built from scratch and hosted on GitHub Pages.</p>
+              <tt style="color: #1BA098">html | css | js</tt>
+            </div>
+            <div class="sideicon">
+                <span style="font-size: 30px"><a href="https://github.com/joy-zhouu/joy-zhouu.github.io"><i class="fab fa-github"></i></a></span>
+                <span style="padding-left: 15px; font-size: 27px"><a href="joy-zhouu.github.io"><i class="fas fa-link"></i></a></span>
+              </div>
+      </div>
+      </div>
+
+
+      <div class="container">
+        <a href="https://github.com/mingyeeee/RUhacks2021"><img src="assets/augmented.png"></a>
+        <div class="overlay">
+          <div class="text">
+            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">AugmentEd</span><br>
+              Education tool that projects virtual simulations of science experiments onto a sheet of paper.</p>
+              <tt style="color: #1BA098">opengl | tensorflow | keras | python</tt>
+            </div>
+            <div class="sideicon">
+              <span style="font-size: 30px"><a href="https://github.com/mingyeeee/RUhacks2021"><i class="fab fa-github"></i></a></span>
+              <span style="padding-left: 15px; font-size: 27px"><a href="https://devpost.com/software/augmenteded"><i class="fas fa-link"></i></a></span>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="https://devpost.com/software/loca-0bgsit"><img src="assets/loca.png"></a>
+        <div class="overlay">
+          <div class="text">
+            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">Loca</span><br>
+              Allows users to track their periods and locate publicly accessible sanitary product dispensers.</p>
+              <tt style="color: #1BA098">figma | cov open data api | mapbox</tt>
+              <div class="icon">
+                <span style="font-size: 30px; padding-left: 100px"><a href="https://devpost.com/software/loca-0bgsit"><i class="fas fa-link"></i></a></span>
+              </div>
+            </div>
+        </div>
+      </div>
+      
     </div>
   </main>
 
-  <footer>
-    <p>© Joy Zhou 2022</p>
+  <footer id="footer">
+    <p><i>have a lovely day!</i> 👋 <i>- joy</i></p>
   </footer>
+  
 </body>
 
 </html>
