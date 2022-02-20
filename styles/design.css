@@ -242,3 +242,62 @@ html {
       10px 10px rgba(27, 161, 152, 0.3), 15px 15px rgba(27, 161, 152, 0.2),
       20px 20px rgba(27, 161, 152, 0.1), 25px 25px rgba(27, 161, 152, 0.05);
   }
+
+  .navMenu {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+  }
+  
+  .navMenu a {
+    color: #f6f4e6;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 530;
+    padding-left: 35px;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:hover {
+    color: #1BA098;
+  }
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #1BA098;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(53px);
+    transform: translateX(53px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(123px);
+    transform: translateX(123px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
