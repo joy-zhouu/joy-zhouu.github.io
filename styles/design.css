@@ -93,10 +93,10 @@ html {
   header .headerText h1 {
     font-size: 3rem;
     font-weight: 700;
-    margin: 0 auto;
     color: #1BA098;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 15px;
+    padding-right: 200px;
   }
 
   footer {
