@@ -182,6 +182,7 @@
   .container {
     position: relative;
     width: 500px;
+    height: 339px;
     margin: 10px;
     float: left;
   }
