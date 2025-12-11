@@ -1,255 +1,270 @@
-   html {
-    background-color: #051622;
-    font-size: 62.5%;
-  }
-  
-  .navMenu {
-    position: absolute;
-    top: 10%;
-    left: 80%;
-  }
-  
-  .navMenu a {
-    color: #f6f4e6;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-size: 1.4em;
-    text-transform: uppercase;
-    font-weight: 530;
-    padding-left: 35px;
-    display: inline-block;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navMenu a:hover {
-    color: #1BA098;
-  }
-  
-  .navMenu .dot {
-    width: 6px;
-    height: 6px;
-    background: #1BA098;
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-transform: translateX(30px);
-    transform: translateX(30px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(53px);
-    transform: translateX(53px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(123px);
-    transform: translateX(123px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
-  .navMenu a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
-  }
-  
+html {
+     background-color: #051622;
+     font-size: 62.5%;
+   }
+   
+   .navMenu {
+     position: absolute;
+     top: 10%;
+     left: 80%;
+   }
+   
+   .navMenu a {
+     color: #f6f4e6;
+     font-family: 'Poppins', sans-serif;
+     text-decoration: none;
+     font-size: 1.4em;
+     text-transform: uppercase;
+     font-weight: 530;
+     padding-left: 35px;
+     display: inline-block;
+     -webkit-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+   }
+   
+   .navMenu a:hover {
+     color: #1BA098;
+   }
+   
+   .navMenu .dot {
+     width: 6px;
+     height: 6px;
+     background: #1BA098;
+     border-radius: 50%;
+     opacity: 0;
+     -webkit-transform: translateX(30px);
+     transform: translateX(30px);
+     -webkit-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+   }
+   
+   .navMenu a:nth-child(1):hover ~ .dot {
+     -webkit-transform: translateX(53px);
+     transform: translateX(53px);
+     -webkit-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+     opacity: 1;
+   }
+   
+   .navMenu a:nth-child(2):hover ~ .dot {
+     -webkit-transform: translateX(123px);
+     transform: translateX(123px);
+     -webkit-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+     opacity: 1;
+   }
+   
+   .navMenu a:nth-child(3):hover ~ .dot {
+     -webkit-transform: translateX(200px);
+     transform: translateX(200px);
+     -webkit-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+     opacity: 1;
+   }
+   
+ 
+   h1 {
+     font-family: 'Poppins', sans-serif;
+     font-size: 3rem;
+     font-weight: 700;
+     color: #fff;
+     width: 80%;
+     margin-left: 220px;
+   }
+   
+   body {
+     font-family: 'Roboto', sans-serif;
+   }
+   
+   p {
+     line-height: 1.6;
+   }
+   
+   a {
+     text-decoration: none;
+     color: #1BA098;
+   }
+   
+   a:hover {
+     color: #1BA098;
+   }
+   
+   
+   /* Make the first page/header fill the viewport and left-align its content */
+   .header {
+     min-height: 100vh; /* full browser height */
+     display: flex;
+     align-items: center;
+     justify-content: flex-start; /* left align horizontally */
+     padding-left: 60px; /* spacing from the left edge */
+   }
 
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #fff;
-    width: 80%;
-    margin-left: 220px;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  p {
-    line-height: 1.6;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #1BA098;
-  }
-  
-  a:hover {
-    color: #1BA098;
-  }
-  
-  
-  header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 30px 60px;
-    overflow: visible;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    display: inline-block;
-    color: #1BA098;
-    text-align: center;
-    padding: 14px 16px;
-  }
+   header {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start; /* left align header content */
+     align-items: center;
+   }
+   
+   /* Container for header text, force left alignment */
+   .headerText {
+     text-align: left;
+     max-width: 900px;
+     color: #fff;
+   }
 
-  header .headerText h1 {
-    
-    font-size: 4rem;
-    font-weight: 700;
-    margin: 0 auto;
-    color: #fff;
-    width: 80%;
-    padding-top: 150px;
-    padding-bottom: 15px;
-  }
-  
-  header p {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 400;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 10px;
-  }
-  
-  header p span {
-    color: #1BA098;
-  }
-  
-#cover {
-  width: 1070px;
-  height: 900px;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fas:hover {
-      color: #0F5752;
-  }
-
-  .fab:hover {
-    color: #0F5752;
-  }
-
-  .arrow {
-    text-align: center;
-    margin: 8% 0;
-  }
-  .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-  }
-  
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
-  }
-
-  .container {
-    position: relative;
-    width: 500px;
-    height: 339px;
-    margin: 10px;
-    float: left;
-  }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #051622;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    height: 45%;
-    background-color: rgba(5, 22, 34, 0.7);
-  }
-  
-  .icon{
-    position: absolute;
-    top: 92%;
-    left: 90%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
-  }
-
-  .sideicon{
-    position: relative;
-    top: 67%;
-    left: 130%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  .text {
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    width: 80%;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
-  }
-
-  
-  footer {
-    width: 100%;
-    position: fixed;
-    margin: 0 auto;
-    bottom: 0px;
-    padding: 15px;
-    text-align: center;
-    color: white;
-    font-size: 1.6rem;
-  }
-  
-  footer p {
-    margin: 0;
-    padding: 0;
-    color: #1BA098;
-  }
-  
+   ul {
+     list-style-type: none;
+     padding: 30px 60px;
+     overflow: visible;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a{
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-size: 15px;
+     display: inline-block;
+     color: #1BA098;
+     text-align: center;
+     padding: 14px 16px;
+   }
+ 
+   header .headerText h1 {
+     font-size: 4rem;
+     font-weight: 700;
+     margin: 0 0 15px 0;
+     color: #fff;
+     width: 100%;
+     padding-top: 0;
+     padding-bottom: 15px;
+   }
+   
+   header p {
+     color: #fff;
+     font-size: 2rem;
+     font-weight: 400;
+     width: 100%;
+     margin: 0 0 10px 0;
+     padding-bottom: 10px;
+     text-align: left;
+   }
+   
+   header p span {
+     color: #1BA098;
+   }
+   
+ #cover {
+   width: 1070px;
+   height: 900px;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+   .fas:hover {
+       color: #0F5752;
+   }
+ 
+   .fab:hover {
+     color: #0F5752;
+   }
+ 
+   .arrow {
+     text-align: left; /* left align the down arrow */
+     margin: 3% 0 0 0;
+   }
+   .bounce {
+     -moz-animation: bounce 2s infinite;
+     -webkit-animation: bounce 2s infinite;
+     animation: bounce 2s infinite;
+   }
+   
+   @keyframes bounce {
+     0%, 20%, 50%, 80%, 100% {
+       transform: translateY(0);
+     }
+     40% {
+       transform: translateY(-30px);
+     }
+     60% {
+       transform: translateY(-15px);
+     }
+   }
+ 
+   .container {
+     position: relative;
+     width: 500px;
+     height: 339px;
+     margin: 10px;
+     float: left;
+   }
+   .overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: #051622;
+     overflow: hidden;
+     width: 100%;
+     height: 0;
+     transition: .5s ease;
+   }
+   
+   .container:hover .overlay {
+     height: 45%;
+     background-color: rgba(5, 22, 34, 0.7);
+   }
+   
+   .icon{
+     position: absolute;
+     top: 92%;
+     left: 90%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: left;
+   }
+ 
+   .sideicon{
+     position: relative;
+     top: 67%;
+     left: 130%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+   }
+ 
+   .text {
+     color: white;
+     font-size: 15px;
+     position: absolute;
+     width: 80%;
+     top: 40%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: left;
+   }
+ 
+   
+   footer {
+     width: 100%;
+     position: fixed;
+     margin: 0 auto;
+     bottom: 0px;
+     padding: 15px;
+     text-align: center;
+     color: white;
+     font-size: 1.6rem;
+   }
+   
+   footer p {
+     margin: 0;
+     padding: 0;
+     color: #1BA098;
+   }
