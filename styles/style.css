@@ -32,22 +32,25 @@ a:hover {
 }
 
 /* ------------------------------
-   HEADER / HERO SECTION
+   HERO SECTION (LEFT-ALIGNED)
 --------------------------------*/
 header {
   width: 100%;
+  height: 100vh;              /* Full browser height */
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding-top: 150px;
-  padding-bottom: 50px;
+  justify-content: flex-start; /* Start near top */
+  align-items: flex-start;     /* Left-align content */
+  padding-left: 8vw;
+  padding-right: 8vw;
+  box-sizing: border-box;
 }
 
 .headerText {
-  max-width: 800px;
-  text-align: center; /* restore center alignment */
-  margin: 0 auto;
+  max-width: 600px;           /* Limit line width for readability */
+  text-align: left;
+  margin: 0;
+  padding-top: 150px;         /* Push content down slightly */
 }
 
 .headerText h1 {
@@ -55,26 +58,24 @@ header {
   font-size: 4rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .headerText p {
-  color: #fff;
   font-size: 2rem;
   font-weight: 400;
-  width: 100%;
-  margin: auto;
-  padding-bottom: 10px;
+  color: #fff;
+  margin-bottom: 15px;
 }
 
 .headerText p span {
   color: #1BA098;
 }
 
-/* Arrow bounce */
+/* Arrow at the bottom of hero */
 .arrow {
-  text-align: center;
   margin-top: 50px;
+  text-align: left;
 }
 
 .bounce {
@@ -195,7 +196,7 @@ footer p {
   }
   
   header h1 {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   .headerText p {
@@ -208,5 +209,19 @@ footer p {
 
   .text {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerText h1 {
+    font-size: 2.6rem;
+  }
+
+  .headerText p {
+    font-size: 1.4rem;
+  }
+
+  main h1 {
+    font-size: 1.6rem;
   }
 }
