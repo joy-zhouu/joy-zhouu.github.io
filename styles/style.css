@@ -1,83 +1,53 @@
-/* ---------------------------------------------------
-   GLOBAL
---------------------------------------------------- */
-
-html {
-  background-color: #051622;
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
+/* ------------------------------
+   Global Reset + Typography
+--------------------------------*/
+* {
   margin: 0;
   padding: 0;
-  color: #fff;
-}
-
-*, *::before, *::after {
   box-sizing: border-box;
 }
 
-a, button, .overlay {
-  transition: all 0.25s ease-in-out;
-}
-
-p {
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #051622;
+  color: white;
   line-height: 1.6;
 }
 
-a {
-  text-decoration: none;
-  color: #1BA098;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-
-/* ---------------------------------------------------
-   HEADER (FRONT PAGE)
---------------------------------------------------- */
-
-header {
+/* ------------------------------
+   Header / Hero Section
+--------------------------------*/
+.header {
+  height: 100vh; /* Full page height */
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh; /* Fill the entire browser height */
-  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8vw;
 }
 
-header .headerText {
+.header img {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
   text-align: left;
-  width: min(90%, 800px);
-  margin: 0 auto;
-  padding-top: 4rem; /* Slight visual breathing room */
-}
-
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(2.4rem, 4vw, 4rem);
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
 }
 
 header p {
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  color: #fff;
-  margin-top: 1.2rem;
+  font-size: 1.25rem;
+  max-width: 600px;
+  text-align: left;
 }
 
-header p span {
+.headerText a {
   color: #1BA098;
 }
 
-
-/* Arrow bounce */
 .arrow {
-  margin-top: 4rem;
-  text-align: left;
+  margin-top: 30px;
 }
 
 .bounce {
@@ -86,122 +56,100 @@ header p span {
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-30px); }
-  60% { transform: translateY(-15px); }
+  40% { transform: translateY(-15px); }
+  60% { transform: translateY(-8px); }
 }
 
-
-/* ---------------------------------------------------
-   FEATURED PROJECTS SECTION
---------------------------------------------------- */
-
+/* ------------------------------
+   Main Section Title
+--------------------------------*/
 main h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: clamp(2.4rem, 4vw, 4rem);
-  font-weight: 700;
-  width: min(90%, 800px);
-  margin: 6rem auto 2rem auto;
-  color: #fff;
   text-align: left;
+  padding-left: 8vw;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
 }
 
-
-/* ---------------------------------------------------
-   PROJECT GRID
---------------------------------------------------- */
-
+/* ------------------------------
+   2x2 Project Grid
+--------------------------------*/
 #cover {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: min(1200px, 90%);
   margin: 0 auto 6rem auto;
 }
 
-#cover .container {
+.container {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 14px;
 }
 
-#cover .container img {
+.container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-
-/* ---------------------------------------------------
-   OVERLAY
---------------------------------------------------- */
-
+/* ------------------------------
+   Hover Overlay (Full Coverage)
+--------------------------------*/
 .overlay {
   position: absolute;
-  inset: 0;
-  height: 0;
+  inset: 0; /* Top/right/bottom/left: 0 */
   background-color: rgba(5, 22, 34, 0.75);
-  overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .container:hover .overlay {
-  height: 50%;
-  bottom: 0;
+  opacity: 1;
 }
 
+/* ------------------------------
+   Overlay Text
+--------------------------------*/
 .text {
-  color: #fff;
-  font-size: 1.5rem;
+  color: white;
   width: 80%;
+  font-size: 1.4rem;
   text-align: left;
+  line-height: 1.4;
 }
 
-.icon,
+.text span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1BA098;
+}
+
 .sideicon {
   position: absolute;
+  bottom: 14px;
+  right: 14px;
+  font-size: 26px;
+}
+
+.sideicon a {
   color: #1BA098;
 }
 
-.icon {
-  bottom: 1rem;
-  right: 1rem;
-}
-
-.sideicon {
-  top: 1rem;
-  right: 1rem;
-}
-
-
-/* ---------------------------------------------------
-   FOOTER (optional if added later)
---------------------------------------------------- */
-
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 2rem 0;
-  color: #1BA098;
-  margin-top: 4rem;
-  font-size: 1.6rem;
-}
-
-footer p {
-  margin: 0;
-}
-
-
-/* ---------------------------------------------------
-   RESPONSIVE TWEAKS
---------------------------------------------------- */
-
-@media (max-width: 600px) {
-  .text {
-    font-size: 1.3rem;
+/* ------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 900px) {
+  #cover {
+    grid-template-columns: 1fr;
+  }
+  
+  header h1 {
+    font-size: 2.6rem;
   }
 }
