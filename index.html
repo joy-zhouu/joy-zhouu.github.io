@@ -5,97 +5,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="favicon.ico?" rel="icon" type="image/x-icon" />
-    <script src="https://kit.fontawesome.com/ca4342ee6d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,6000&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css" />
+
   <title>Joy Zhou</title>
-  <link rel="shortcut icon" type="image/jpg" href="/assets/personal_logo.png">
+
+  <link rel="icon" href="assets/personal_logo.png" type="image/png" />
+
+  <!-- Fonts & Icons -->
+  <script src="https://kit.fontawesome.com/ca4342ee6d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
-    <div class="header">
-        <ul>
-            <li><a href="joy-zhouu.github.io"><img src="assets/joyzhou.png"></a></li>
-          </ul>
 
-    <header>
-      <div class="headerText">
-        <h1><i>Hi, I'm Joy!</i> ✌️</h1>
-        <p>
-          Currently @ Morgan Stanley. 💾
-        </p>
-        <p>
-          Passionate about the intersections between technology and our daily lives.
-        </p>
-        <p>
-            <span style="padding-right: 15px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="https://www.linkedin.com/in/joyjyzhou"><i class="fab fa-linkedin-in"></i></a></span>
-            <span style="padding-right: 16px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="https://github.com/joy-zhouu"><i class="fab fa-github"></i></a></span>
-            <span style="padding-right: 15px; padding-top: 15px; font-size: 30px; width: 50px; text-align: left; text-decoration: none; color: #1BA098;"><a href="mailto:joy.jy.zhou@gmail.com"><i class="fas fa-envelope"></i></a></span>
-        </p>
-        <div class="arrow bounce">
-          <a class="fa fa-arrow-down fa-2x"></a>
-        </div>
+  <!-- HEADER -->
+  <header>
+    <div class="headerText">
+      <h1><i>Hi, I'm Joy!</i> ✌️</h1>
+
+      <p>Currently @ Morgan Stanley. 💾</p>
+      <p>Passionate about the intersections between technology and our daily lives.</p>
+
+      <!-- Social icons -->
+      <p>
+        <a href="https://www.linkedin.com/in/joyjyzhou" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in" style="font-size: 2.8rem;"></i>
+        </a>
+
+        <a href="https://github.com/joy-zhouu" aria-label="GitHub">
+          <i class="fab fa-github" style="font-size: 2.8rem; margin-left: 12px;"></i>
+        </a>
+
+        <a href="mailto:joy.jy.zhou@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope" style="font-size: 2.8rem; margin-left: 12px;"></i>
+        </a>
+      </p>
+
+      <!-- Scroll icon -->
+      <div class="arrow bounce">
+        <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
+
+  <!-- PROJECTS -->
   <main>
     <h1><i>Featured Projects</i> 💾</h1>
+
     <div id="cover">
+
+      <!-- Project: BIXI -->
       <div class="container">
-        <a href="https://github.com/joy-zhouu/bixi-trip"><img src="assets/BIXItrips.png"></a>
+        <a href="https://github.com/joy-zhouu/bixi-trip">
+          <img src="assets/BIXItrips.png" alt="BIXI data visualization project" />
+        </a>
+
         <div class="overlay">
           <div class="text">
-            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">BIXI Data Analysis</span><br>
-            Visualization of BIXI open data from 2021-2025</p>
+            <p>
+              <span style="font-size: 2rem; font-weight: 700; color: #1BA098;">
+                BIXI Data Analysis
+              </span><br>
+              Visualization of BIXI open data from 2021–2025
+            </p>
             <tt style="color: #1BA098">react+js | bixi open data | mapbox</tt>
-          </div>  
-      </div>
-      </div>
-
-      <div class="container">
-        <a href="https://github.com/joy-zhouu/joy-zhouu.github.io"><img src="assets/mockup.png"></a>
-        <div class="overlay">
-          <div class="text">
-            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">Personal Website v2</span><br>
-              Second iteration of my personal website. Built from scratch and hosted on GitHub Pages.</p>
-              <tt style="color: #1BA098">html | css | js</tt>
-            </div>
-      </div>
-      </div>
-
-
-      <div class="container">
-        <a href="https://github.com/mingyeeee/RUhacks2021"><img src="assets/augmented.png"></a>
-        <div class="overlay">
-          <div class="text">
-            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">AugmentEd</span><br>
-              Education tool that projects virtual simulations of science experiments onto a sheet of paper.</p>
-              <tt style="color: #1BA098">opengl | tensorflow | keras | python</tt>
-            </div>
-            <div class="sideicon">
-              <span style="padding-left: 15px; font-size: 27px"><a href="https://devpost.com/software/augmenteded"><i class="fas fa-link"></i></a></span>
-            </div>
+          </div>
         </div>
       </div>
 
+
+      <!-- Project: Personal Website -->
       <div class="container">
-        <a href="https://devpost.com/software/loca-0bgsit"><img src="assets/loca.png"></a>
+        <a href="https://github.com/joy-zhouu/joy-zhouu.github.io">
+          <img src="assets/mockup.png" alt="Personal Website mockup v2" />
+        </a>
+
         <div class="overlay">
           <div class="text">
-            <p style="margin-bottom: 4px; line-height: 20px"><span style="font-size: 2rem; font-weight: 700; color: #1BA098">Loca</span><br>
-              Allows users to track their periods and locate publicly accessible sanitary product dispensers.</p>
-              <tt style="color: #1BA098">figma | cov open data api | mapbox</tt>
-            </div>
+            <p>
+              <span style="font-size: 2rem; font-weight: 700; color: #1BA098;">
+                Personal Website v2
+              </span><br>
+              Second iteration of my personal website. Built from scratch and hosted on GitHub Pages.
+            </p>
+            <tt style="color: #1BA098">html | css | js</tt>
+          </div>
         </div>
       </div>
-    
+
+
+      <!-- Project: AugmentEd -->
+      <div class="container">
+        <a href="https://github.com/mingyeeee/RUhacks2021">
+          <img src="assets/augmented.png" alt="AugmentEd AR education tool" />
+        </a>
+
+        <div class="overlay">
+          <div class="text">
+            <p>
+              <span style="font-size: 2rem; font-weight: 700; color: #1BA098;">
+                AugmentEd
+              </span><br>
+              AR education tool projecting virtual simulations of science experiments.
+            </p>
+            <tt style="color: #1BA098">opengl | tensorflow | keras | python</tt>
+          </div>
+
+          <div class="sideicon">
+            <a href="https://devpost.com/software/augmenteded" aria-label="View project on Devpost">
+              <i class="fas fa-link" style="font-size: 2.6rem;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project: Loca -->
+      <div class="container">
+        <a href="https://devpost.com/software/loca-0bgsit">
+          <img src="assets/loca.png" alt="Loca period tracker and dispenser locator" />
+        </a>
+
+        <div class="overlay">
+          <div class="text">
+            <p>
+              <span style="font-size: 2rem; font-weight: 700; color: #1BA098;">
+                Loca
+              </span><br>
+              Tool for tracking cycles & finding sanitary product dispensers in public spaces.
+            </p>
+            <tt style="color: #1BA098">figma | cov open data api | mapbox</tt>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
-  
-</body>
 
+</body>
 </html>
