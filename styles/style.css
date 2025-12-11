@@ -18,7 +18,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Universal transition for interactive elements */
 a, button, .overlay {
   transition: all 0.25s ease-in-out;
 }
@@ -38,28 +37,72 @@ a:hover {
 
 
 /* ---------------------------------------------------
-   HEADERS / TEXT
+   HEADER (FRONT PAGE)
 --------------------------------------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Fill the entire browser height */
+  padding: 0;
+}
+
+header .headerText {
+  text-align: left;
+  width: min(90%, 800px);
+  margin: 0 auto;
+  padding-top: 4rem; /* Slight visual breathing room */
+}
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(2.4rem, 4vw, 4rem);
   font-weight: 700;
-  width: min(90%, 800px);
-  margin: 0 auto;
-  padding-top: 10rem;
+  margin: 0;
   color: #fff;
 }
 
 header p {
-  width: min(90%, 800px);
-  margin: 1rem auto 0 auto;
   font-size: clamp(1.4rem, 2vw, 2rem);
   color: #fff;
+  margin-top: 1.2rem;
 }
 
 header p span {
   color: #1BA098;
+}
+
+
+/* Arrow bounce */
+.arrow {
+  margin-top: 4rem;
+  text-align: left;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+
+/* ---------------------------------------------------
+   FEATURED PROJECTS SECTION
+--------------------------------------------------- */
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 700;
+  width: min(90%, 800px);
+  margin: 6rem auto 2rem auto;
+  color: #fff;
+  text-align: left;
 }
 
 
@@ -72,7 +115,7 @@ header p span {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   width: min(1200px, 90%);
-  margin: 4rem auto;
+  margin: 0 auto 6rem auto;
 }
 
 #cover .container {
@@ -83,7 +126,6 @@ header p span {
   border-radius: 6px;
 }
 
-/* Images scale cleanly */
 #cover .container img {
   width: 100%;
   height: 100%;
@@ -93,7 +135,7 @@ header p span {
 
 
 /* ---------------------------------------------------
-   OVERLAY EFFECT
+   OVERLAY
 --------------------------------------------------- */
 
 .overlay {
@@ -112,16 +154,13 @@ header p span {
   bottom: 0;
 }
 
-/* Overlay text centered */
 .text {
   color: #fff;
   font-size: 1.5rem;
   width: 80%;
   text-align: left;
-  opacity: 1;
 }
 
-/* Icons inside overlay (if used) */
 .icon,
 .sideicon {
   position: absolute;
@@ -140,27 +179,7 @@ header p span {
 
 
 /* ---------------------------------------------------
-   ANIMATIONS
---------------------------------------------------- */
-
-.arrow {
-  text-align: center;
-  margin: 8% 0;
-}
-
-.bounce {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-30px); }
-  60% { transform: translateY(-15px); }
-}
-
-
-/* ---------------------------------------------------
-   FOOTER
+   FOOTER (optional if added later)
 --------------------------------------------------- */
 
 footer {
